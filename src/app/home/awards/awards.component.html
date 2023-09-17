@@ -9,12 +9,14 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12" >
+    <div class="col-md-6"  style="margin-bottom: 40px;">
       <table class="table table-borderless">
         <tbody>
           <tr *ngFor="let a of awards;">
-            <td><i class="fabiconawards fa fa-trophy fa-lg text-warning "></i></td>
+            <a href={{a.link}}>
+            <td><img src={{a.img}} width="100" height="100"></td>
             <td>{{ a.title }} - <strong>  {{ a.name }}  </strong></td>
+            </a>
           </tr>
         </tbody>
       </table>

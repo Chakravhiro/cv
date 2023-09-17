@@ -13,7 +13,7 @@ export class Job {
   constructor(public company: string,
           // public image: string,
               public period: string, public position: string,
-              public description: string, private paragraphsToShow: number ) {
+              public description: string, private paragraphsToShow: number , private imglink: string, private cling : string) {
     this.elastic = this.isShowMore();
     this.displayedDescription = this.getDescription();
   }

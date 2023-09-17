@@ -13,7 +13,8 @@ import { AwardsComponent } from './home/awards/awards.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent },
+ 
 ];
 
 @NgModule({

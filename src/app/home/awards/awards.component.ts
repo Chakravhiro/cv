@@ -11,8 +11,7 @@ export class AwardsComponent implements OnInit, OnChanges {
 
   @Input() English: any;
 
-  public headEnglish: any = { title: 'AWARDS', subtitle: 'PERSONAL ACHIEVEMENT & COURSES' };
-  public headEspanol: any = { title: 'LOGROS', subtitle: 'CURSOS Y LOGROS PERSONALES' };
+  public headEnglish: any = { title: 'Certifications', subtitle: 'Programming' , subtitle2:'Cloud' ,subtitle3:'Programing'};
   public head: any = this.headEnglish;
 
   
@@ -21,27 +20,29 @@ export class AwardsComponent implements OnInit, OnChanges {
   public awardsEnglish: any = [
 
     {
-      title: 'COURSE',
-      name: 'COURSE NAME - 2022'
+      img: '/assets/images/hack.png',
+      title: 'Angular',
+      name: 'Hackerrank',
+      link: 'https://www.hackerrank.com/certificates/0e494c94e21d'
     },
     {
-      title: 'ACHIEVEMENT',
-      name: 'ACHIEVEMENT NAME - 2021'
+      img:'/assets/images/hack.png',
+      title: 'Java',
+      name: 'Hackerrank',
+      link:'https://www.hackerrank.com/certificates/d5588274524d'
+
+    },
+    {
+    img:'/assets/images/hack.png',
+    title: 'Mysql',
+    name: 'Hackerrank',
+    link:'https://www.hackerrank.com/certificates/c2428e63985d'
     }
+
   ];
 
 
-  public awardsEspanol: any = [
-
-    {
-      title: 'CURSO',
-      name: 'NOMBRE DE CURSO - 2021'
-    },
-    {
-      title: 'PREMIO',
-      name: 'NOMBRE DE PREMIO - 2021'
-    }
-  ];
+  
 
   
   public awards: any = this.awardsEnglish;
@@ -55,10 +56,7 @@ export class AwardsComponent implements OnInit, OnChanges {
     if (this.English) {
       this.awards = this.awardsEnglish;
       this.head = this.headEnglish;
-    } else {
-      this.awards = this.awardsEspanol;
-      this.head = this.headEspanol;
-    }
+    } 
   }
 
 }

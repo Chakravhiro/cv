@@ -1,9 +1,9 @@
-<section class="module" id="resume">
+<section class="module" id="resume" >
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="m-title c-align">
-          <h2>{{head.title}}</h2>
+          <h2 style="color: green;">{{head.title}}</h2>
           <h6>{{head.subtitle}}</h6>
         </div>
       </div>
@@ -16,8 +16,8 @@
             </div>
             <div class="timeline-panel">
               <div class="timeline-body">
-                <h5 class="timeline-title">{{job.position}} | {{job.period}}</h5>
-                <h6 class="timeline-description">{{job.company}}  </h6>
+                <a href="{{job.cling}}" target="_blank"><img src={{job.imglink}} ><br><br>
+                <h5 class="timeline-title" style="color: black;">{{job.position}} | {{job.period}}</h5></a>
                 <div [innerHTML]="job.displayedDescription"></div>
               </div>
             </div>
