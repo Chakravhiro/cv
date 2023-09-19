@@ -28,7 +28,7 @@ export class ResumeComponent implements OnInit, OnChanges {
 
 
     const school_1: Job = new Job('Full Stack Intern', 'Jan-2021-Apr-2021', 'MyKidsdrawing',
-      '<ul><li>Participated in the Project development through entire Software Development Lifecycle(SDLC).</li><li>- Designed and implemented new web components across new and existing designs.</li><li>- Developed a Web application using Java Spring Boot Technologies that enable kids to show case their drawing and get evaluated by  Artists(www.mykidsdrawing.com)</li></ul>', 1,'/assets/images/bk.jpg','https://www.beyondklasses.com/');
+      '<ul><li>Participated in the Project development through entire Software Development Lifecycle(SDLC).</li><li>- Designed and implemented new web components across new and existing designs.</li><li>- Developed a Web application using Java Spring Boot Technologies that enable kids to show case their drawing and get evaluated by  Artists(www.mykidsdrawing.com)</li></ul>', 1,'assets/images/bk.jpg','https://www.beyondklasses.com/');
 
     
     
