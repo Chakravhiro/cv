@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
     profile: 'PROFILE',
     skills: 'SKILLS',
     resume: 'RESUME',
-    awards: 'AWARDS'
+    awards: 'CERTIFCATIONS'
   };
 
   public menuEspanol: any = {
