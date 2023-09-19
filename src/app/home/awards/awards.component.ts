@@ -87,7 +87,7 @@ export class AwardsComponent implements OnInit, OnChanges {
       link: 'https://www.coursera.org/account/accomplishments/certificate/APAZTDHGNZWU'
     },
     {
-      img:'/assets/images/Meta.png',
+      img:'./assets/images/Meta.png',
       title: 'Database Structures with MySQL',
       name: 'Meta',
       link:'https://www.coursera.org/account/accomplishments/certificate/WLLNYHKBJY7M'
