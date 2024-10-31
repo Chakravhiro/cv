@@ -14,9 +14,6 @@ export class AwardsComponent implements OnInit, OnChanges {
   public headEnglish: any = { title: 'Certifications', subtitle: 'Programming' , subtitle2:'Cloud' ,subtitle3:'Programing'};
   public head: any = this.headEnglish;
 
-  
-
-
   public programing: any = [
 
     {

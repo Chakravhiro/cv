@@ -12,7 +12,7 @@ export class ResumeComponent implements OnInit, OnChanges {
   public jobs: any = [];
   jobsEnglish: Job[];
   
-  public headEnglish: any = { title: 'RESUME', subtitle: '' };
+  public headEnglish: any = { title: 'WORK EXPERIENCE', subtitle: '' };
 
   public head: any = this.headEnglish;
 
@@ -20,7 +20,7 @@ export class ResumeComponent implements OnInit, OnChanges {
 
     const job_1: Job = new Job('Professional Product Developer', '(May 2023-Current)', 'Dedalus Health Care Services',
       'Dedalus Group is the leading european provider of digital solutions for Healthcare'
-        + '</P><ul><li>- Write well designed, testable, efficient Code and Review it.</il><li>- Experience on Java 8, Java Quarkus, Data JPA ,Keycloak</li><li>- Generated Swagger Document using openapi for all the Backend APis in the project</li><li>- Utilized the latest Software development tools like GIT, GITHUB, Docker, Confluence ,Swagger, JUNIT, Postman, Maven, TOAD</li></ul>', 1,'/assets/images/dedalus.jpg', 'https://www.dedalus.com/global/en/');
+        + '</P><ul><li>- Write well designed, testable, efficient Code and Review it.</il><li>- Experience on Java 8, Java Quarkus, Data JPA ,Keycloak</li><li>- Generated Swagger Document using openapi for all the Backend APis in the project</li><li>- Utilized the latest Software development tools like GIT, GITHUB, Docker, Confluence ,Swagger, JUNIT, Postman, Maven, TOAD</li><li>- Improved Appication Performance using MultiThreading and Code Optimisation</li><li>- Experience in Agile Development Process</li><li>- Implemented secure and robust backend solutions for sensitive data handling, complying with industry standards.</li><li>- Developed unit tests and automated testing scripts using RestAssured/MockServer</li><li> -Knowledge on Implementing Generative AI Models in Backend Services</li><li> -Managed unit and integration testing processes, contributed to CI/CD implementations to ensure efficient, reliable deployments.</li></ul>', 1,'/assets/images/dedalus.jpg', 'https://www.dedalus.com/global/en/');
 
 
     const job_2: Job = new Job('Associate Software Developer', '(APR 2021 - May 2023)', 'CGI',
