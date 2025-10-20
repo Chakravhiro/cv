@@ -34,7 +34,7 @@ export class ResumeComponent implements OnInit, OnChanges {
         <li>Contributed to modernizing Ford’s architecture by leveraging <b>Java 21 features</b> and <b>microservice best practices</b>.</li>
       </ul>`,
       1,
-      '/assets/images/alti.png',
+      './assets/images/alti.png',
       'https://www.altimetrik.com/'
     );
     
@@ -58,7 +58,7 @@ export class ResumeComponent implements OnInit, OnChanges {
       <li>Managed <b>unit and integration testing</b> processes, contributed to <b>CI/CD implementations</b> to ensure efficient, reliable deployments.</li>
       </ul>`,
       1,
-      '/assets/images/dedalus.jpg',
+      './assets/images/dedalus.jpg',
       'https://www.dedalus.com/global/en/'
     );
 
@@ -81,7 +81,7 @@ export class ResumeComponent implements OnInit, OnChanges {
       <li>Utilized the latest software development tools like <b>GIT, GitHub, Putty, WinSCP, Swagger, JUnit, Postman, Maven, TOAD</b>.</li>
       </ul>`,
       1,
-      '/assets/images/cgi.jpg',
+      './assets/images/cgi.jpg',
       'https://www.cgi.com/en'
     );
 
@@ -95,7 +95,7 @@ export class ResumeComponent implements OnInit, OnChanges {
       <li>Developed a <b>web application</b> using <b>Java Spring Boot</b> technologies that enable kids to showcase their drawings and get evaluated by artists (www.mykidsdrawing.com).</li>
       </ul>`,
       1,
-      '/assets/images/bk.jpg',
+      './assets/images/bk.jpg',
       'https://www.beyondklasses.com/'
     );
 
