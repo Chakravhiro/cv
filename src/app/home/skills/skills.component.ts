@@ -29,6 +29,10 @@ export class SkillsComponent implements OnInit, OnChanges {
     [{
       title: 'Typescript',
       progress: 85
+    }],
+    [{
+      title: 'ReactJS',
+      progress: 75
     }]
   ];
 
@@ -70,6 +74,11 @@ export class SkillsComponent implements OnInit, OnChanges {
       title:'Microsoft Azure',
       progress:90
     }],
+    [{
+      title:'GCP',
+      progress:90
+    }],
+
   ];
 
   public skill_3: any = [

@@ -18,24 +18,93 @@ export class ResumeComponent implements OnInit, OnChanges {
 
   constructor() {
 
-    const job_1: Job = new Job('Professional Product Developer', '(May 2023-Current)', 'Dedalus Health Care Services',
-      'Dedalus Group is the leading european provider of digital solutions for Healthcare'
-        + '</P><ul><li>- Write well designed, testable, efficient Code and Review it.</il><li>- Experience on Java 8, Java Quarkus, Data JPA ,Keycloak</li><li>- Generated Swagger Document using openapi for all the Backend APis in the project</li><li>- Utilized the latest Software development tools like GIT, GITHUB, Docker, Confluence ,Swagger, JUNIT, Postman, Maven, TOAD</li><li>- Improved Appication Performance using MultiThreading and Code Optimisation</li><li>- Experience in Agile Development Process</li><li>- Implemented secure and robust backend solutions for sensitive data handling, complying with industry standards.</li><li>- Developed unit tests and automated testing scripts using RestAssured/MockServer</li><li> -Knowledge on Implementing Generative AI Models in Backend Services</li><li> -Managed unit and integration testing processes, contributed to CI/CD implementations to ensure efficient, reliable deployments.</li></ul>', 1,'/assets/images/dedalus.jpg', 'https://www.dedalus.com/global/en/');
+    const job_3: Job = new Job(
+      'Senior Software Engineer',
+      'Apr-2025–Present',
+      'Altimetrik (Client: Ford Motor Company)',
+      `</p>
+      <ul>
+        <li>Developing and maintaining <b>cloud-native microservices</b> using <b>Spring Boot</b> and <b>Java 21</b> for Ford's enterprise applications.</li>
+        <li>Deploying and managing applications on <b>Google Cloud Platform (GCP)</b> using services such as <b>Cloud Run, Pub/Sub, and Cloud Storage</b>.</li>
+        <li>Building responsive front-end components with <b>React</b> and integrating with backend RESTful APIs.</li>
+        <li>Implementing <b>JWT-based authentication</b> and <b>role-based authorization</b> to ensure secure API communication.</li>
+        <li>Collaborating in <b>Agile</b> environments, participating in sprint planning, code reviews, and peer programming.</li>
+        <li>Optimizing performance through <b>code refactoring, caching strategies</b>, and efficient database queries.</li>
+        <li>Writing <b>unit and integration tests</b> using JUnit and MockServer to ensure code quality and reliability.</li>
+        <li>Contributed to modernizing Ford’s architecture by leveraging <b>Java 21 features</b> and <b>microservice best practices</b>.</li>
+      </ul>`,
+      1,
+      '/assets/images/alti.png',
+      'https://www.altimetrik.com/'
+    );
+    
 
+    const job_1: Job = new Job(
+      'Professional Product Developer',
+      '(May 2023-Current)',
+      'Dedalus Health Care Services',
+      `Dedalus Group is the leading European provider of digital solutions for <b>Healthcare</b>
+      </p>
+      <ul>
+      <li>Write <b>well-designed, testable, efficient code</b> and review it.</li>
+      <li>Experience on <b>Java 8, Java Quarkus, Data JPA, Keycloak</b>.</li>
+      <li>Generated <b>Swagger Document</b> using OpenAPI for all the backend APIs in the project.</li>
+      <li>Utilized the latest software development tools like <b>GIT, GitHub, Docker, Confluence, Swagger, JUnit, Postman, Maven, TOAD</b>.</li>
+      <li>Improved application performance using <b>multithreading</b> and code optimization.</li>
+      <li>Experience in <b>Agile development process</b>.</li>
+      <li>Implemented <b>secure and robust backend solutions</b> for sensitive data handling, complying with industry standards.</li>
+      <li>Developed <b>unit tests</b> and automated testing scripts using <b>RestAssured/MockServer</b>.</li>
+      <li>Knowledge on implementing <b>Generative AI models</b> in backend services.</li>
+      <li>Managed <b>unit and integration testing</b> processes, contributed to <b>CI/CD implementations</b> to ensure efficient, reliable deployments.</li>
+      </ul>`,
+      1,
+      '/assets/images/dedalus.jpg',
+      'https://www.dedalus.com/global/en/'
+    );
 
-    const job_2: Job = new Job('Associate Software Developer', '(APR 2021 - May 2023)', 'CGI',
-      '<ul> <li>- Write well designed, testable, efficient Code and Review it.</li><li>- Hands-on Experience in Linux Commands by working in putty to fetch and commit changes in the Database.</li><li>- Experience on Automation of Jobs using Bash Scripts.</li><li>- Experience on Java 8, Java Spring Boot, Data JPA ,Spring Security.</li><li>- Knowledge of Developing REST API for a full Stack application.</li><li>- Experience working on relational databases(Oracle 10g).</li><li>- Trained on Deployment of Webapps in Microsoft Cloud(Azure).</li><li>- Debugged code and located root causes of problems by reviewing configuration files and logs.</li><li>- Knowledge on Frontend Technologies Like Angular , Html, CSS, JavaScript.</li><li>- Experience in Agile Development Process</li><li>- Utilized the latest Software development tools like GIT, GITHUB, Putty, WinSCP ,Swagger, JUNIT, Postman, Maven, TOAD</li></ul>', 1,'/assets/images/cgi.jpg','https://www.cgi.com/en');
+    const job_2: Job = new Job(
+      'Associate Software Developer',
+      '(APR 2021 - May 2023)',
+      'CGI',
+      `<p/>
+      <ul>
+      <li>Write <b>well-designed, testable, efficient code</b> and review it.</li>
+      <li>Hands-on experience in <b>Linux commands</b> by working in Putty to fetch and commit changes in the database.</li>
+      <li>Experience on <b>automation of jobs</b> using Bash scripts.</li>
+      <li>Experience on <b>Java 8, Java Spring Boot, Data JPA, Spring Security</b>.</li>
+      <li>Knowledge of developing <b>REST API</b> for a full-stack application.</li>
+      <li>Experience working on <b>relational databases</b> (Oracle 10g).</li>
+      <li>Trained on deployment of web apps in <b>Microsoft Cloud (Azure)</b>.</li>
+      <li>Debugged code and located root causes of problems by reviewing <b>configuration files and logs</b>.</li>
+      <li>Knowledge on frontend technologies like <b>Angular, HTML, CSS, JavaScript</b>.</li>
+      <li>Experience in <b>Agile development process</b>.</li>
+      <li>Utilized the latest software development tools like <b>GIT, GitHub, Putty, WinSCP, Swagger, JUnit, Postman, Maven, TOAD</b>.</li>
+      </ul>`,
+      1,
+      '/assets/images/cgi.jpg',
+      'https://www.cgi.com/en'
+    );
 
-
-    const school_1: Job = new Job('Full Stack Intern', 'Jan-2021-Apr-2021', 'MyKidsdrawing',
-      '<ul><li>Participated in the Project development through entire Software Development Lifecycle(SDLC).</li><li>- Designed and implemented new web components across new and existing designs.</li><li>- Developed a Web application using Java Spring Boot Technologies that enable kids to show case their drawing and get evaluated by  Artists(www.mykidsdrawing.com)</li></ul>', 1,'/assets/images/bk.jpg','https://www.beyondklasses.com/');
+    const school_1: Job = new Job(
+      'Full Stack Intern',
+      'Jan-2021-Apr-2021',
+      'MyKidsdrawing',
+      `<ul>
+      <li>Participated in the project development through the entire <b>Software Development Lifecycle (SDLC)</b>.</li>
+      <li>Designed and implemented new <b>web components</b> across new and existing designs.</li>
+      <li>Developed a <b>web application</b> using <b>Java Spring Boot</b> technologies that enable kids to showcase their drawings and get evaluated by artists (www.mykidsdrawing.com).</li>
+      </ul>`,
+      1,
+      '/assets/images/bk.jpg',
+      'https://www.beyondklasses.com/'
+    );
 
     
     
      
     
     
-    this.jobsEnglish = [job_1,job_2,school_1];
+    this.jobsEnglish = [job_3, job_1,job_2,school_1];
     
     this.jobs = this.jobsEnglish;
   }

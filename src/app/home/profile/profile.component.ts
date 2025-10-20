@@ -20,8 +20,8 @@ export class ProfileComponent implements OnInit, OnChanges  {
   // You can use a HTML tags in 'data'
   public profileEnglish: any =
     {
-      title: 'Summary:', data: 'Dedicated and Experienced Software Professional , Proficient in adapting to new software applications, Self motivated with excellent Communication skills, Strong Creative , Logical , Technical and analytic skills. Team Player with an eye for detail Having 3.8 years of experience in Full Stack Web Development , HTML, CSS, Bootstrap , Java, Spring Boot, Quarkus, Angular Framework, tools like git, GitHub, postman, JIRA, Database (MySQL,Oracle DB,Postgre SQl)'
-      
+      title: 'Professional Summary:',
+       data: 'Dedicated and Experienced Software Professional with 4.8 years of experience in Full Stack Web Development. Proficient in designing and developing scalable Microservices using Java, Spring Boot, and Quarkus, and building dynamic front-end applications with React. Skilled in leveraging Google Cloud Platform (GCP) services for cloud-native development and deployment. Highly adaptable, self-motivated, and detail-oriented with strong analytical, logical, and technical skills. A proven team player with excellent communication and problem-solving abilities. Experienced with Git, GitHub, Postman, JIRA, and relational databases like MySQL, Oracle, and PostgreSQL.'
     };
   
   
