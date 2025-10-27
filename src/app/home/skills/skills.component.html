@@ -9,13 +9,18 @@
     </div>
   </div>
   <div class="row">
+
     <div class="col-md-4" *ngFor="let d of skills; let ixr = index;" style="margin-bottom: 40px;">
       <h5>{{d.title}}</h5>
 
       <div *ngFor="let r of d.info; let ixr = index;">
+    
       <div class="progress-item" *ngFor="let g of r;let ix = index;">
-        <div class="progress-title">{{g.title}} </div>
-        <ngb-progressbar type="success" [value]="g.progress" [striped]="true"></ngb-progressbar>
+
+        <div class="progress-title">
+          <img [src]="g.image" alt="skill icon" style="width: 30%; margin-bottom: 5%; height: 20%;">
+          <br>
+         </div>
       </div>
 
     </div>
