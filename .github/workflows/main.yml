@@ -3,7 +3,13 @@ name: Deploy Angular app to GitHub Pages
 on:
   push:
     branches:
-      - main  # 👈 deploys automatically when you push to main
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -12,11 +18,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20  # or whichever version you use
+          node-version: 20
 
       - name: Install dependencies
         run: npm ci
@@ -28,5 +37,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages       # target branch
-          folder: dist/cv        # 👈 replace with your actual dist folder
+          branch: gh-pages
+          folder: dist/cv     # 👈 adjust if your dist folder name differs
+          token: ${{ secrets.GITHUB_TOKEN }}
