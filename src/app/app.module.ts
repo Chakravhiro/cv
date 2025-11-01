@@ -10,7 +10,8 @@ import { ProfileComponent } from './home/profile/profile.component';
 import { ResumeComponent } from './home/resume/resume.component';
 import { SkillsComponent } from './home/skills/skills.component';
 import { AwardsComponent } from './home/awards/awards.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AcheivementsComponent } from './app/home/acheivements/acheivements.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
     ProfileComponent,
     ResumeComponent,
     SkillsComponent,
-    AwardsComponent
+    AwardsComponent,
+    AcheivementsComponent
   ],
   imports: [
     BrowserModule,

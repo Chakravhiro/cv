@@ -1,0 +1,29 @@
+<section class="module module-gray" id="acheivements">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="m-title c-align">
+        <h2>{{head.title}}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-md-6" *ngFor="let d of skills; let ixr = index;" style="margin-bottom: 40px;">
+       <h5 style="text-align: center;">{{d.title}}</h5>
+
+      <div *ngFor="let r of d.info; let ixr = index;">
+    
+      <div class="progress-item" *ngFor="let g of r;let ix = index;">
+
+        <div class="progress-title" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+            <img [src]="g.image" alt="skill icon" style="width:80%;height:20%;margin-bottom:5%;">
+            <br>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+</div>
+</section>
